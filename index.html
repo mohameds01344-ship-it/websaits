@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Pizza House - مطعم بيتزا ومأكولات إيطالية">
+
+    <title>Pizza House | Pizza & Italian Food</title>
+
+    <link rel="stylesheet" href="styel.css">
+    <link rel="stylesheet" href="script.js">
+    
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="header">
+
+        <div class="container nav">
+
+            <a href="#home"
+               class="logo"
+               id="brandName">
+
+                Pizza House
+
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="فتح القائمة">
+
+                ☰
+
+            </button>
+
+
+            <nav id="nav">
+
+                <a href="#home">
+                    الرئيسية
+                </a>
+
+                <a href="#menu">
+                    المنيو
+                </a>
+
+                <a href="#offers">
+                    العروض
+                </a>
+
+                <a href="#about">
+                    عن المطعم
+                </a>
+
+                <a
+    href="#"
+    class="btn btn-light"
+    id="heroWhatsapp">
+
+    اطلب واتساب
+
+</a>
+
+                <a href="#contact">
+                    تواصل معنا
+                </a>
+
+            </nav>
+
+
+            <!-- Cart Button -->
+
+            <button
+                class="cart-button"
+                id="cartButton">
+
+                🛒 السلة
+
+                <span id="cartCount">
+                    0
+                </span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section
+        class="hero"
+        id="home">
+
+        <div class="hero-content container">
+
+            <span
+                class="small-title"
+                id="heroCategory">
+
+                Pizza & Italian Food
+
+            </span>
+
+
+            <h1 id="heroTitle">
+
+                ألذ بيتزا في كل لقمة
+
+            </h1>
+
+
+            <p id="heroDescription">
+
+                بيتزا طازة بمكونات مختارة وطعم مميز.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#menu"
+                    class="btn btn-primary">
+
+                    شوف المنيو
+
+                </a>
+
+
+                <a
+                    href="#order"
+                    class="btn btn-light">
+
+                    اطلب الآن
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         WHY CHOOSE US
+    ====================================================== -->
+
+    <section class="section">
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+                <span>
+
+                    ليه تختارنا؟
+
+                </span>
+
+
+                <h2>
+
+                    طعم يفرق من أول لقمة
+
+                </h2>
+
+            </div>
+
+
+            <div
+                class="features-grid"
+                id="featuresGrid">
+
+                <!-- JavaScript -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         MENU
+    ====================================================== -->
+
+    <section
+        class="section light-section"
+        id="menu">
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+                <span>
+
+                    المنيو
+
+                </span>
+
+
+                <h2>
+
+                    اختار البيتزا المفضلة ليك
+
+                </h2>
+
+            </div>
+
+
+            <div
+                class="cards-grid"
+                id="menuGrid">
+
+                <!-- المنتجات هتتحط من JavaScript -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         OFFERS
+    ====================================================== -->
+
+    <section
+        class="section"
+        id="offers">
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+                <span>
+
+                    العروض
+
+                </span>
+
+
+                <h2>
+
+                    عروض مناسبة لكل وقت
+
+                </h2>
+
+            </div>
+
+
+            <div
+                class="offers-grid"
+                id="offersGrid">
+
+                <!-- العروض هتتحط من JavaScript -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ORDER SECTION
+    ====================================================== -->
+
+    <section
+        class="section order-section"
+        id="order">
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+                <span>
+
+                    طلب أونلاين
+
+                </span>
+
+
+                <h2>
+
+                    اطلب من الموقع مباشرة
+
+                </h2>
+
+            </div>
+
+
+
+            <div class="order-box">
+
+
+                <!-- ================= CART ================= -->
+
+                <div class="cart-area">
+
+                    <h3>
+
+                        🛒 طلبك
+
+                    </h3>
+
+
+                    <div id="cartItems">
+
+                        <p class="empty-cart">
+
+                            السلة فاضية
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="cart-total">
+
+                        <span>
+
+                            الإجمالي:
+
+                        </span>
+
+
+                        <strong id="cartTotal">
+
+                            0 جنيه
+
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= CUSTOMER DATA ================= -->
+
+                <div class="customer-area">
+
+                    <h3>
+
+                        بيانات الطلب
+
+                    </h3>
+
+
+
+                    <label for="customerName">
+
+                        الاسم
+
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="customerName"
+                        placeholder="اكتب اسمك"
+                    >
+
+
+
+                    <label for="customerPhone">
+
+                        رقم الهاتف
+
+                    </label>
+
+
+                    <input
+                        type="tel"
+                        id="customerPhone"
+                        placeholder="01012345678"
+                    >
+
+
+
+                    <label for="customerAddress">
+
+                        العنوان
+
+                    </label>
+
+
+                    <textarea
+                        id="customerAddress"
+                        placeholder="اكتب عنوان التوصيل"
+                    ></textarea>
+
+
+
+                    <button
+                        class="btn btn-primary whatsapp-order"
+                        id="sendOrder">
+
+                        📱 إرسال الطلب على واتساب
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CALL TO ACTION
+    ====================================================== -->
+
+    <section class="cta-section">
+
+        <div class="container">
+
+
+            <div class="cta-box">
+
+
+                <div>
+
+                    <span class="small-title">
+
+                        جعان؟
+
+                    </span>
+
+
+                    <h2>
+
+                        اطلب وجبتك دلوقتي 🍕
+
+                    </h2>
+
+
+                    <p>
+
+                        اختار البيتزا المفضلة ليك
+                        وابعت طلبك على واتساب.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="cta-buttons">
+
+
+                    <a
+                        href="#order"
+                        class="btn btn-primary">
+
+                        اطلب الآن
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="btn btn-light"
+                        id="ctaPhone">
+
+                        اتصل الآن
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+
+    <section
+        class="section light-section"
+        id="about">
+
+        <div class="container about">
+
+
+            <div class="about-text">
+
+
+                <span class="small-title">
+
+                    عن المطعم
+
+                </span>
+
+
+                <h2 id="aboutTitle">
+
+                    بيتزا طازة بطعم إيطالي مميز 🍕
+
+                </h2>
+
+
+                <p id="aboutDescription">
+
+                    في Pizza House بنقدملك بيتزا طازة
+                    بمكونات مختارة، عجينة محضرة بعناية،
+                    وتشكيلة متنوعة تناسب كل الأذواق.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="about-image">
+
+
+                <img
+                    src="images/about.jpg"
+                    alt="Pizza House"
+                    id="aboutImage"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CONTACT / BRANCHES
+    ====================================================== -->
+
+    <section
+        class="section"
+        id="contact">
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+                <span>
+
+                    تواصل معنا
+
+                </span>
+
+
+                <h2>
+
+                    فروعنا
+
+                </h2>
+
+            </div>
+
+
+            <div
+                class="branches-grid"
+                id="branchesGrid">
+
+                <!-- الفروع من JavaScript -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+
+            <div>
+
+                <h3 id="footerBrand">
+
+                    Pizza House
+
+                </h3>
+
+
+                <p>
+
+                    بيتزا طازة بطعم تحبه.
+
+                </p>
+
+            </div>
+
+
+
+            <div>
+
+                <p>
+
+                    الهاتف:
+
+                    <a
+                        href="#"
+                        id="footerPhone">
+
+                        01012345678
+
+                    </a>
+
+                </p>
+
+
+                <p>
+
+                    <a
+                        href="#"
+                        id="footerWhatsapp"
+                        target="_blank"
+                        rel="noopener">
+
+                        واتساب
+
+                    </a>
+
+                </p>
+
+            </div>
+
+
+
+            <div>
+
+                © 2026
+
+                <span id="footerBrand2">
+
+                    Pizza House
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
